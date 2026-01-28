@@ -143,7 +143,17 @@ const Page = ({ params }) => {
         </div>
 
         <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
-          <Image className='border-4 border-white' width={1280} height={720} src={data.image} alt='' />
+        {data.image && (
+  <Image
+    src={data.image}
+    width={1280}
+    height={720}
+    alt=""
+    className="border-4 border-white"
+  />
+)}
+
+          {/* <Image className='border-4 border-white' width={1280} height={720} src={data.image} alt='' /> */}
 
           <div
             className='blog-content'
